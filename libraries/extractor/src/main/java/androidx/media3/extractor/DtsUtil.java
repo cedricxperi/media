@@ -66,6 +66,20 @@ public final class DtsUtil {
         2048, 2304, 2560, 2688, 2816, 2823, 2944, 3072, 3840, 4096, 6144, 7680
       };
 
+  private static String currentMimeType;
+
+  public static void setCurrentMimeType(String currentMimeType) {
+    DtsUtil.currentMimeType = currentMimeType;
+  }
+
+  public static String getCurrentMimeType() {
+    return currentMimeType;
+  }
+
+  public static void clearCurrentMimeType() {
+    currentMimeType = "";
+  }
+
   /**
    * Returns whether a given integer matches a DTS sync word. Synchronization and storage modes are
    * defined in ETSI TS 102 114 V1.1.1 (2002-08), Section 5.3.
