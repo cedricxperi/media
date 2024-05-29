@@ -716,7 +716,7 @@ public final class DefaultAudioSink implements AudioSink {
       } catch (UnhandledAudioFormatException e) {
         throw new ConfigurationException(e, inputFormat);
       }
-
+      android.util.Log.d(TAG, "configure: OUTPUT_MODE_PCM");
       outputMode = OUTPUT_MODE_PCM;
       outputEncoding = outputFormat.encoding;
       outputSampleRate = outputFormat.sampleRate;
@@ -735,6 +735,7 @@ public final class DefaultAudioSink implements AudioSink {
               : AudioOffloadSupport.DEFAULT_UNSUPPORTED;
       if (offloadMode != OFFLOAD_MODE_DISABLED && audioOffloadSupport.isFormatSupported) {
         outputMode = OUTPUT_MODE_OFFLOAD;
+        android.util.Log.d(TAG, "configure: OUTPUT_MODE_OFFLOAD");
         outputEncoding =
             MimeTypes.getEncoding(checkNotNull(inputFormat.sampleMimeType), inputFormat.codecs);
         outputChannelConfig = Util.getAudioTrackChannelConfig(inputFormat.channelCount);
@@ -743,6 +744,7 @@ public final class DefaultAudioSink implements AudioSink {
         enableOffloadGapless = audioOffloadSupport.isGaplessSupported;
       } else {
         outputMode = OUTPUT_MODE_PASSTHROUGH;
+        android.util.Log.d(TAG, "configure: OUTPUT_MODE_PASSTHROUGH");
         @Nullable
         Pair<Integer, Integer> encodingAndChannelConfig =
             audioCapabilities.getEncodingAndChannelConfigForPassthrough(
