@@ -80,6 +80,7 @@ dependencies {
     implementation project(modulePrefix + 'lib-exoplayer')
     implementation project(modulePrefix + 'lib-exoplayer-dash')
     implementation project(modulePrefix + 'lib-exoplayer-hls')
+    implementation project(modulePrefix + 'lib-dts-hpx')
     implementation project(modulePrefix + 'lib-exoplayer-rtsp')
     implementation project(modulePrefix + 'lib-exoplayer-smoothstreaming')
     implementation project(modulePrefix + 'lib-ui')

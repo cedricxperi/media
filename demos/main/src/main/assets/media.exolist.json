@@ -1,5 +1,166 @@
 [
   {
+    "name": "Rakuten Head-end Verification",
+    "samples": [
+      {
+        "name": "DASH DTS:X P2 5.1.4",
+        "uri": "https://s3-eu-west-1.amazonaws.com/wuakidevstpeter/g/pack/for_xperi/723fc33668437dbb895dda4b1b5e3a35-mc-0-146-0-0_UHD_HDR10_D2BBC/stream_dtsx.mpd"
+      },
+      {
+        "name": "DASH DTSC 5.1",
+        "uri": "https://s3-eu-west-1.amazonaws.com/wuakidevstpeter/g/pack/for_xperi/723fc33668437dbb895dda4b1b5e3a35-mc-0-146-0-0_UHD_HDR10_D2BBC/stream_dtsc.mpd"
+      }
+    ]
+  },
+  {
+    "name": "SVT Streams",
+    "samples": [
+      {
+        "name": "DASH: Digital Surround 5.1 768.0",
+        "uri": "https://secured.streamdts.com/dtsx/dtsc/dash/callout/index.mpd"
+      },
+      {
+        "name": "DASH: DTS Express 5.1 384.0",
+        "uri": "https://secured.streamdts.com/dtsx/dtse/dash/callout/index.mpd"
+      },
+      {
+        "name": "DASH: DTS:X (P2) 5.1 160.0",
+        "uri": "https://secured.streamdts.com/dtsx/dtsx/dash/callout51/index.mpd"
+      },
+      {
+        "name": "DASH: DTS:X (P2) (SYNC) 5.1 160.0",
+        "uri": "https://secured.streamdts.com/dtsx/dtsx/dash/sync/index.mpd"
+      },
+      {
+        "name": "DASH: DTS:X (P2) 5.1.4 448.0",
+        "uri": "https://secured.streamdts.com/dtsx/dtsx/dash/callout/index.mpd"
+      },
+      {
+        "name": "HLS-fMP4: Digital Surround 5.1 768.0",
+        "uri": "https://secured.streamdts.com/dtsx/dtsc/hls/fmp4/callout/index.m3u8"
+      },
+      {
+        "name": "HLS-fMP4: DTS Express 5.1 384.0",
+        "uri": "https://secured.streamdts.com/dtsx/dtse/hls/fmp4/callout/index.m3u8"
+      },
+      {
+        "name": "HLS-fMP4: DTS:X (P2) 5.1 160.0",
+        "uri": "https://secured.streamdts.com/dtsx/dtsx/hls/fmp4/callout51/index.m3u8"
+      },
+      {
+        "name": "HLS-fMP4: DTS:X (P2) (SYNC) 5.1 160.0",
+        "uri": "https://secured.streamdts.com/dtsx/dtsx/hls/fmp4/sync/index.m3u8"
+      },
+      {
+        "name": "HLS-fMP4: DTS:X (P2) 5.1.4 448.0",
+        "uri": "https://secured.streamdts.com/dtsx/dtsx/hls/fmp4/callout/index.m3u8"
+      },
+      {
+        "name": "HLS-v4: Digital Surround 5.1 768.0",
+        "uri": "https://secured.streamdts.com/dtsx/dtsc/hls/ts/callout/index.m3u8"
+      },
+      {
+        "name": "HLS-v4: DTS Express 5.1 384.0",
+        "uri": "https://secured.streamdts.com/dtsx/dtse/hls/ts/callout/index.m3u8"
+      },
+      {
+        "name": "HLS-v4: DTS:X (P2) 5.1 160.0",
+        "uri": "https://secured.streamdts.com/dtsx/dtsx/hls/ts/callout51/index.m3u8"
+      },
+      {
+        "name": "HLS-v4: DTS:X (P2) (SYNC) 5.1 160.0",
+        "uri": "https://secured.streamdts.com/dtsx/dtsx/hls/ts/sync/index.m3u8"
+      },
+      {
+        "name": "HLS-v4: DTS:X (P2) 5.1.4 448.0",
+        "uri": "https://secured.streamdts.com/dtsx/dtsx/hls/ts/callout/index.m3u8"
+      },
+      {
+        "name": "HLS-v3: Digital Surround 5.1 768.0",
+        "uri": "https://secured.streamdts.com/dtshd/dtsc/hls/index.m3u8"
+      },
+      {
+        "name": "HLS-v3: DTS Express 5.1 384.0",
+        "uri": "https://secured.streamdts.com/dtshd/dtse/hls/index.m3u8"
+      }
+    ]
+  },
+  {
+    "name": "WASU Debugging",
+    "samples": [
+      {
+        "name": "WASU Debug",
+        "uri": "http://huawei-ott-hls.wasu.tv/pcsan24/ott/movie/2022-06/27/20220627093748081U7URNV27/playlist.m3u8"
+      },
+      {
+        "name": "DASH DTSC 5.1 (t1cc)",
+        "uri": "https://secured.streamdts.com/dtshd/dtsc/dash/index.mpd"
+      },
+      {
+        "name": "HLSv3 TS DTSC 5.1 (t1cc)",
+        "uri": "https://secured.streamdts.com/dtshd/dtsc/hls/index.m3u8"
+      },
+      {
+        "name": "HLSv4 TS DTSC 5.1 (t1cc)",
+        "uri": "https://secured.streamdts.com/dtshd/dtsc/hls/index_v4.m3u8"
+      },
+      {
+        "name": "DASH DTSE 5.1",
+        "uri": "https://secured.streamdts.com/dtshd/dtse/dash/index.mpd"
+      },
+      {
+        "name": "HLS-TS DTSE 5.1 v4",
+        "uri": "https://secured.streamdts.com/dtsx/dtse/hls/ts/callout/index.m3u8"
+      }
+    ]
+  },
+  {
+    "name": "DTS:X SVKit: Channel Callout",
+    "samples": [
+      {
+        "name": "DTSC DASH: Callout 5.1(t1cc)",
+        "uri": "http://cert.streamdts.com/dtsx/dtsc/dash/callout/index.mpd"
+      },
+      {
+        "name": "DTSC HLS(fmp4): Callout 5.1(t1cc)",
+        "uri": "http://cert.streamdts.com/dtsx/dtsc/hls/fmp4/callout/index.m3u8"
+      },
+      {
+        "name": "DTSE DASH: Callout 5.1",
+        "uri": "http://cert.streamdts.com/dtsx/dtse/dash/callout/index.mpd"
+      },
+      {
+        "name": "DTSX DASH: Callout 5.1",
+        "uri": "http://cert.streamdts.com/dtsx/dtsx/dash/callout51/index.mpd"
+      },
+      {
+        "name": "DTSX HLS(fmp4): Callout 5.1",
+        "uri": "http://cert.streamdts.com/dtsx/dtsx/hls/fmp4/callout51/index.m3u8"
+      },
+      {
+        "name": "DTSX DASH: Callout 5.1.4(t1cc)",
+        "uri": "http://cert.streamdts.com/dtsx/dtsx/dash/callout/index.mpd"
+      },
+      {
+        "name": "DTSX HLS(fmp4): Callout 5.1.4(t1cc)",
+        "uri": "http://cert.streamdts.com/dtsx/dtsx/hls/fmp4/callout/index.m3u8"
+      }
+    ]
+  },
+  {
+    "name": "DTS:X SVKit: AV Sync Check",
+    "samples": [
+      {
+        "name": "DTSX DASH: AV Sync",
+        "uri": "http://cert.streamdts.com/dtsx/dtsx/dash/sync/index.mpd"
+      },
+      {
+        "name": "DTSX HLS(fmp4): AV Sync",
+        "uri": "http://cert.streamdts.com/dtsx/dtsx/hls/fmp4/sync/index.m3u8"
+      }
+    ]
+  },
+  {
     "name": "Clear DASH",
     "samples": [
       {
@@ -35,31 +196,31 @@
         "name": "HD (cenc)",
         "uri": "https://storage.googleapis.com/wvmedia/cenc/h264/tears/tears.mpd",
         "drm_scheme": "widevine",
-        "drm_license_uri": "https://proxy.uat.widevine.com/proxy?video_id=2015_tears&provider=widevine_test"
+        "drm_license_uri": "https://proxy.uat.widevine.com/proxy?provider=widevine_test"
       },
       {
         "name": "UHD (cenc)",
         "uri": "https://storage.googleapis.com/wvmedia/cenc/h264/tears/tears_uhd.mpd",
         "drm_scheme": "widevine",
-        "drm_license_uri": "https://proxy.uat.widevine.com/proxy?video_id=2015_tears&provider=widevine_test"
+        "drm_license_uri": "https://proxy.uat.widevine.com/proxy?provider=widevine_test"
       },
       {
         "name": "HD (cbcs)",
         "uri": "https://storage.googleapis.com/wvmedia/cbcs/h264/tears/tears_aes_cbcs.mpd",
         "drm_scheme": "widevine",
-        "drm_license_uri": "https://proxy.uat.widevine.com/proxy?video_id=2015_tears&provider=widevine_test"
+        "drm_license_uri": "https://proxy.uat.widevine.com/proxy?provider=widevine_test"
       },
       {
         "name": "UHD (cbcs)",
         "uri": "https://storage.googleapis.com/wvmedia/cbcs/h264/tears/tears_aes_cbcs_uhd.mpd",
         "drm_scheme": "widevine",
-        "drm_license_uri": "https://proxy.uat.widevine.com/proxy?video_id=2015_tears&provider=widevine_test"
+        "drm_license_uri": "https://proxy.uat.widevine.com/proxy?provider=widevine_test"
       },
       {
         "name": "Secure -> Clear -> Secure (cenc)",
         "uri": "https://storage.googleapis.com/exoplayer-test-media-1/widevine/tears_enc_clear_enc.mpd",
         "drm_scheme": "widevine",
-        "drm_license_uri": "https://proxy.uat.widevine.com/proxy?video_id=2015_tears&provider=widevine_test",
+        "drm_license_uri": "https://proxy.uat.widevine.com/proxy?provider=widevine_test",
         "drm_session_for_clear_content": true
       }
     ]
@@ -71,25 +232,25 @@
         "name": "HD (cenc, full-sample)",
         "uri": "https://storage.googleapis.com/wvmedia/cenc/vp9/tears/tears.mpd",
         "drm_scheme": "widevine",
-        "drm_license_uri": "https://proxy.uat.widevine.com/proxy?video_id=2015_tears&provider=widevine_test"
+        "drm_license_uri": "https://proxy.uat.widevine.com/proxy?provider=widevine_test"
       },
       {
         "name": "UHD (cenc, full-sample)",
         "uri": "https://storage.googleapis.com/wvmedia/cenc/vp9/tears/tears_uhd.mpd",
         "drm_scheme": "widevine",
-        "drm_license_uri": "https://proxy.uat.widevine.com/proxy?video_id=2015_tears&provider=widevine_test"
+        "drm_license_uri": "https://proxy.uat.widevine.com/proxy?provider=widevine_test"
       },
       {
         "name": "HD (cenc, sub-sample)",
         "uri": "https://storage.googleapis.com/wvmedia/cenc/vp9/subsample/24fps/tears/tears.mpd",
         "drm_scheme": "widevine",
-        "drm_license_uri": "https://proxy.uat.widevine.com/proxy?video_id=2015_tears&provider=widevine_test"
+        "drm_license_uri": "https://proxy.uat.widevine.com/proxy?provider=widevine_test"
       },
       {
         "name": "UHD (cenc, sub-sample)",
         "uri": "https://storage.googleapis.com/wvmedia/cenc/vp9/subsample/24fps/tears/tears_uhd.mpd",
         "drm_scheme": "widevine",
-        "drm_license_uri": "https://proxy.uat.widevine.com/proxy?video_id=2015_tears&provider=widevine_test"
+        "drm_license_uri": "https://proxy.uat.widevine.com/proxy?provider=widevine_test"
       }
     ]
   },
@@ -100,13 +261,13 @@
         "name": "HD (cenc)",
         "uri": "https://storage.googleapis.com/wvmedia/cenc/hevc/tears/tears.mpd",
         "drm_scheme": "widevine",
-        "drm_license_uri": "https://proxy.uat.widevine.com/proxy?video_id=2015_tears&provider=widevine_test"
+        "drm_license_uri": "https://proxy.uat.widevine.com/proxy?provider=widevine_test"
       },
       {
         "name": "UHD (cenc)",
         "uri": "https://storage.googleapis.com/wvmedia/cenc/hevc/tears/tears_uhd.mpd",
         "drm_scheme": "widevine",
-        "drm_license_uri": "https://proxy.uat.widevine.com/proxy?video_id=2015_tears&provider=widevine_test"
+        "drm_license_uri": "https://proxy.uat.widevine.com/proxy?provider=widevine_test"
       }
     ]
   },
@@ -142,12 +303,6 @@
         "uri": "https://storage.googleapis.com/wvmedia/cenc/h264/tears/tears.mpd",
         "drm_scheme": "widevine",
         "drm_license_uri": "https://proxy.uat.widevine.com/proxy?video_id=GTS_HW_SECURE_ALL&provider=widevine_test"
-      },
-      {
-        "name": "20s license with renewal",
-        "uri": "https://storage.googleapis.com/wvmedia/cenc/h264/tears/tears.mpd",
-        "drm_scheme": "widevine",
-        "drm_license_uri": "https://proxy.uat.widevine.com/proxy?video_id=GTS_CAN_RENEW&provider=widevine_test"
       },
       {
         "name": "30s license (fails at ~30s)",
@@ -219,19 +374,6 @@
     ]
   },
   {
-    "name": "DASH - Multiple base URLs",
-    "samples": [
-      {
-        "name": "DASH - Multiple base URLs",
-        "uri": "https://storage.googleapis.com/exoplayer-test-media-0/dash-multiple-base-urls/manifest.mpd"
-      },
-      {
-        "name": "DASH - Multiple base URLs (fail over)",
-        "uri": "https://storage.googleapis.com/exoplayer-test-media-0/dash-multiple-base-urls/manifest-failover.mpd"
-      }
-    ]
-  },
-  {
     "name": "HLS",
     "samples": [
       {
@@ -243,11 +385,11 @@
         "uri": "https://devstreaming-cdn.apple.com/videos/streaming/examples/bipbop_16x9/bipbop_16x9_variant.m3u8"
       },
       {
-        "name": "Apple multivariant playlist advanced (TS)",
+        "name": "Apple master playlist advanced (TS)",
         "uri": "https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_ts/master.m3u8"
       },
       {
-        "name": "Apple multivariant playlist advanced (FMP4)",
+        "name": "Apple master playlist advanced (FMP4)",
         "uri": "https://devstreaming-cdn.apple.com/videos/streaming/examples/img_bipbop_adv_example_fmp4/master.m3u8"
       },
       {
@@ -394,124 +536,6 @@
     ]
   },
   {
-    "name": "IMA DAI streams",
-    "samples": [
-      {
-        "name": "HLS VOD: Demo (skippable pre/post), single ads [30 s]",
-        "uri": "ssai://dai.google.com/?contentSourceId=2483977&videoId=ima-vod-skippable-test&format=2&adsId=1"
-      },
-      {
-        "name": "HLS VOD: Tears of Steel (pre/mid/mid/mid/post), single ads [10s]",
-        "uri": "ssai://dai.google.com/?contentSourceId=2528370&videoId=tears-of-steel&format=2&adsId=1"
-      },
-      {
-        "name": "HLS Live: Big Buck Bunny (mid), 3 ads [10/10/10s]",
-        "uri": "ssai://dai.google.com/?assetKey=sN_IYUG8STe1ZzhIIE_ksA&format=2&adsId=3"
-      },
-      {
-        "name": "DASH VOD: Tears of Steel (11 periods, pre/mid/post), 2/5/2 ads [5/10s]",
-        "uri": "ssai://dai.google.com/?contentSourceId=2559737&videoId=tos-dash&format=0&adsId=1"
-      },
-      {
-        "name": "DASH live: Tears of Steel (mid), 3 ads each [10 s]",
-        "uri": "ssai://dai.google.com/?assetKey=jNVjPZwzSkyeGiaNQTPqiQ&format=0&adsId=1"
-      },
-      {
-        "name": "DASH live: New Tears of Steel (mid), 3 ads each [10 s]",
-        "uri": "ssai://dai.google.com/?assetKey=PSzZMzAkSXCmlJOWDmRj8Q&format=0&adsId=12"
-      },
-      {
-        "name": "DASH live: Unencrypted stream with 30s ad breaks every minute",
-        "uri": "ssai://dai.google.com/?assetKey=0ndl1dJcRmKDUPxTRjvdog&format=0&adsId=21"
-      },
-      {
-        "name": "Playlist: No ads - HLS VOD: Demo (skippable pre/post) - No ads",
-        "playlist": [
-          {
-            "uri": "https://html5demos.com/assets/dizzy.mp4"
-          },
-          {
-            "uri": "ssai://dai.google.com/?contentSourceId=2483977&videoId=ima-vod-skippable-test&format=2&adsId=1"
-          },
-          {
-            "uri": "https://html5demos.com/assets/dizzy.mp4"
-          }
-        ]
-      },
-      {
-        "name": "Playlist: No ads - HLS VOD: Tears of steel (pre/mid/mid/mid/post) - No ads",
-        "playlist": [
-          {
-            "uri": "https://html5demos.com/assets/dizzy.mp4"
-          },
-          {
-            "uri": "ssai://dai.google.com/?contentSourceId=2528370&videoId=tears-of-steel&format=2&adsId=1"
-          },
-          {
-            "uri": "https://html5demos.com/assets/dizzy.mp4"
-          }
-        ]
-      },
-      {
-        "name": "Playlist: No ads - DASH VOD: Tears of Steel (11 periods, pre/mid/post) - No ads",
-        "playlist": [
-          {
-            "uri": "https://html5demos.com/assets/dizzy.mp4"
-          },
-          {
-            "uri": "ssai://dai.google.com/?contentSourceId=2559737&videoId=tos-dash&format=0&adsId=1"
-          },
-          {
-            "uri": "https://html5demos.com/assets/dizzy.mp4"
-          }
-        ]
-      },
-      {
-        "name": "Playlist: Client-side Ads - DASH VOD: Tears of Steel (11 periods, pre/mid/post) - No ads",
-        "playlist": [
-          {
-            "uri": "https://storage.googleapis.com/exoplayer-test-media-1/mkv/android-screens-lavf-56.36.100-aac-avc-main-1280x720.mkv",
-            "ad_tag_uri": "https://pubads.g.doubleclick.net/gampad/ads?sz=640x480&iu=/124319096/external/ad_rule_samples&ciu_szs=300x250&ad_rule=1&impl=s&gdfp_req=1&env=vp&output=vmap&unviewed_position_start=1&cust_params=deployment%3Ddevsite%26sample_ar%3Dpremidpost&cmsid=496&vid=short_onecue&correlator="
-          },
-          {
-            "uri": "ssai://dai.google.com/?contentSourceId=2559737&videoId=tos-dash&format=0&adsId=1"
-          },
-          {
-            "uri": "https://html5demos.com/assets/dizzy.mp4"
-          }
-        ]
-      },
-      {
-        "name": "Playlist: No ads - DASH live: Tears of Steel (mid) - No ads",
-        "playlist": [
-          {
-            "uri": "https://html5demos.com/assets/dizzy.mp4"
-          },
-          {
-            "uri": "ssai://dai.google.com/?assetKey=PSzZMzAkSXCmlJOWDmRj8Q&format=0&adsId=1"
-          },
-          {
-            "uri": "https://html5demos.com/assets/dizzy.mp4"
-          }
-        ]
-      },
-      {
-        "name": "Playlist: No ads - HLS live: Big Buck Bunny - No ads",
-        "playlist": [
-          {
-            "uri": "https://html5demos.com/assets/dizzy.mp4"
-          },
-          {
-            "uri": "ssai://dai.google.com/?assetKey=sN_IYUG8STe1ZzhIIE_ksA&format=2&adsId=3"
-          },
-          {
-            "uri": "https://html5demos.com/assets/dizzy.mp4"
-          }
-        ]
-      }
-    ]
-  },
-  {
     "name": "Playlists",
     "samples": [
       {
@@ -526,25 +550,13 @@
         ]
       },
       {
-        "name": "Audio -> Video (MKV) -> Video (MKV) -> Audio -> Video (MKV) -> Video (DASH) -> Audio",
+        "name": "Audio -> Video -> Audio",
         "playlist": [
           {
             "uri": "https://storage.googleapis.com/exoplayer-test-media-1/gen-3/screens/dash-vod-single-segment/audio-141.mp4"
           },
           {
             "uri": "https://storage.googleapis.com/exoplayer-test-media-1/mkv/android-screens-lavf-56.36.100-aac-avc-main-1280x720.mkv"
-          },
-          {
-            "uri": "https://storage.googleapis.com/exoplayer-test-media-1/mkv/android-screens-lavf-56.36.100-aac-avc-main-1280x720.mkv"
-          },
-          {
-            "uri": "https://storage.googleapis.com/exoplayer-test-media-1/gen-3/screens/dash-vod-single-segment/audio-141.mp4"
-          },
-          {
-            "uri": "https://storage.googleapis.com/exoplayer-test-media-1/mkv/android-screens-lavf-56.36.100-aac-avc-main-1280x720.mkv"
-          },
-          {
-            "uri": "https://storage.googleapis.com/wvmedia/clear/h264/tears/tears.mpd"
           },
           {
             "uri": "https://storage.googleapis.com/exoplayer-test-media-1/gen-3/screens/dash-vod-single-segment/audio-141.mp4"
@@ -591,27 +603,6 @@
           {
             "uri": "https://html5demos.com/assets/dizzy.mp4",
             "clip_start_position_ms": 10000
-          }
-        ]
-      },
-      {
-        "name": "Image -> Video -> Image -> Image",
-        "playlist": [
-          {
-            "uri": "https://storage.googleapis.com/exoplayer-test-media-1/jpg/tokyo.jpg",
-            "image_duration_ms": 2000
-          },
-          {
-            "uri": "https://html5demos.com/assets/dizzy.mp4",
-            "clip_end_position_ms": 2000
-          },
-          {
-            "uri": "https://storage.googleapis.com/exoplayer-test-media-1/jpg/london.jpg",
-            "image_duration_ms": 2000
-          },
-          {
-            "uri": "https://storage.googleapis.com/exoplayer-test-media-1/jpg/tokyo.jpg",
-            "image_duration_ms": 2000
           }
         ]
       }
@@ -693,19 +684,11 @@
       {
         "name": "MPEG-4 Timed Text",
         "uri": "https://storage.googleapis.com/exoplayer-test-media-1/mp4/dizzy-with-tx3g.mp4"
-      },
-      {
-        "name": "SubRip muxed into MKV",
-        "uri": "https://storage.googleapis.com/exoplayer-test-media-1/mkv/android-screens-with-subrip.mkv"
-      },
-      {
-        "name": "Overlapping SSA muxed into MKV",
-        "uri": "https://storage.googleapis.com/exoplayer-test-media-1/mkv/android-screens-with-overlapping-ssa.mkv"
       }
     ]
   },
   {
-    "name": "Progressive",
+    "name": "Misc",
     "samples": [
       {
         "name": "Dizzy (MP4)",
@@ -752,46 +735,16 @@
         "uri": "https://storage.googleapis.com/exoplayer-test-media-1/flac/play.flac"
       },
       {
+        "name": "Big Buck Bunny video (FLV)",
+        "uri": "https://vod.leasewebcdn.com/bbb.flv?ri=1024&rs=150&start=0"
+      },
+      {
         "name": "Big Buck Bunny 480p (MP4, AV1)",
         "uri": "https://storage.googleapis.com/downloads.webmproject.org/av1/exoplayer/bbb-av1-480p.mp4"
       },
       {
         "name": "One hour frame counter (MP4)",
         "uri": "https://storage.googleapis.com/exoplayer-test-media-1/mp4/frame-counter-one-hour.mp4"
-      }
-    ]
-  },
-  {
-    "name": "Images",
-    "samples": [
-      {
-        "name": "JPEG (wide)",
-        "uri": "https://storage.googleapis.com/exoplayer-test-media-1/jpg/london.jpg",
-        "image_duration_ms": 2000
-      },
-      {
-        "name": "JPEG (tall)",
-        "uri": "https://storage.googleapis.com/exoplayer-test-media-1/jpg/tokyo.jpg",
-        "image_duration_ms": 2000
-      },
-      {
-        "name": "PNG",
-        "uri": "https://storage.googleapis.com/exoplayer-test-media-1/png/media3test.png",
-        "image_duration_ms": 2000
-      },
-      {
-        "name": "JPEG motion photo (still)",
-        "uri": "https://storage.googleapis.com/exoplayer-test-media-1/jpg/london_motion_photo.jpg",
-        "image_duration_ms": 2000
-      },
-      {
-        "name": "JPEG motion photo (motion)",
-        "uri": "https://storage.googleapis.com/exoplayer-test-media-1/jpg/london_motion_photo.jpg"
-      },
-      {
-        "name": "JPEG (Ultra HDR)",
-        "uri": "https://storage.googleapis.com/exoplayer-test-media-1/jpg/ultra_hdr.jpg",
-        "image_duration_ms": 2000
       }
     ]
   }

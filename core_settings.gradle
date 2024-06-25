@@ -36,6 +36,8 @@ include modulePrefix + 'lib-exoplayer-dash'
 project(modulePrefix + 'lib-exoplayer-dash').projectDir = new File(rootDir, 'libraries/exoplayer_dash')
 include modulePrefix + 'lib-exoplayer-hls'
 project(modulePrefix + 'lib-exoplayer-hls').projectDir = new File(rootDir, 'libraries/exoplayer_hls')
+include modulePrefix + 'lib-dts-hpx'
+project(modulePrefix + 'lib-dts-hpx').projectDir = new File(rootDir, 'libraries/dts_hpx')
 include modulePrefix + 'lib-exoplayer-rtsp'
 project(modulePrefix + 'lib-exoplayer-rtsp').projectDir = new File(rootDir, 'libraries/exoplayer_rtsp')
 include modulePrefix + 'lib-exoplayer-smoothstreaming'

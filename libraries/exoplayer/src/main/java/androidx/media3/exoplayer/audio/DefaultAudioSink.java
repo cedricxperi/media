@@ -141,12 +141,13 @@ public final class DefaultAudioSink implements AudioSink {
     private final SilenceSkippingAudioProcessor silenceSkippingAudioProcessor;
     private final SonicAudioProcessor sonicAudioProcessor;
 
+    private final DtsHpxAudioProcessor dtsHpxAudioProcessor;
     /**
      * Creates a new default chain of audio processors, with the user-defined {@code
      * audioProcessors} applied before silence skipping and speed adjustment processors.
      */
-    public DefaultAudioProcessorChain(AudioProcessor... audioProcessors) {
-      this(audioProcessors, new SilenceSkippingAudioProcessor(), new SonicAudioProcessor());
+    public DefaultAudioProcessorChain(@Nullable Context context, AudioProcessor... audioProcessors) {
+      this(audioProcessors, new SilenceSkippingAudioProcessor(), new SonicAudioProcessor(),new DtsHpxAudioProcessor(context));
     }
 
     /**
@@ -156,10 +157,11 @@ public final class DefaultAudioSink implements AudioSink {
     public DefaultAudioProcessorChain(
         AudioProcessor[] audioProcessors,
         SilenceSkippingAudioProcessor silenceSkippingAudioProcessor,
-        SonicAudioProcessor sonicAudioProcessor) {
+        SonicAudioProcessor sonicAudioProcessor,
+        DtsHpxAudioProcessor dtsHpxAudioProcessor) {
       // The passed-in type may be more specialized than AudioProcessor[], so allocate a new array
       // rather than using Arrays.copyOf.
-      this.audioProcessors = new AudioProcessor[audioProcessors.length + 2];
+      this.audioProcessors = new AudioProcessor[audioProcessors.length + 3];
       System.arraycopy(
           /* src= */ audioProcessors,
           /* srcPos= */ 0,
@@ -168,8 +170,10 @@ public final class DefaultAudioSink implements AudioSink {
           /* length= */ audioProcessors.length);
       this.silenceSkippingAudioProcessor = silenceSkippingAudioProcessor;
       this.sonicAudioProcessor = sonicAudioProcessor;
+      this.dtsHpxAudioProcessor = dtsHpxAudioProcessor;
       this.audioProcessors[audioProcessors.length] = silenceSkippingAudioProcessor;
       this.audioProcessors[audioProcessors.length + 1] = sonicAudioProcessor;
+      this.audioProcessors[audioProcessors.length + 2] = dtsHpxAudioProcessor;
     }
 
     @Override
@@ -316,7 +320,7 @@ public final class DefaultAudioSink implements AudioSink {
     @CanIgnoreReturnValue
     public Builder setAudioProcessors(AudioProcessor[] audioProcessors) {
       checkNotNull(audioProcessors);
-      return setAudioProcessorChain(new DefaultAudioProcessorChain(audioProcessors));
+      return setAudioProcessorChain(new DefaultAudioProcessorChain(context, audioProcessors));
     }
 
     /**
@@ -408,7 +412,7 @@ public final class DefaultAudioSink implements AudioSink {
       checkState(!buildCalled);
       buildCalled = true;
       if (audioProcessorChain == null) {
-        audioProcessorChain = new DefaultAudioProcessorChain();
+        audioProcessorChain = new DefaultAudioProcessorChain(context);
       }
       if (audioOffloadSupportProvider == null) {
         audioOffloadSupportProvider = new DefaultAudioOffloadSupportProvider(context);
