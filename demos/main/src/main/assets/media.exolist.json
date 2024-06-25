@@ -1,5 +1,18 @@
 [
   {
+    "name": "Nassau Test Streams",
+    "samples": [
+      {
+        "name": "MP4 progressive Download 48K 16-bit PCM",
+        "uri": "https://xperi-pa-html5p-aps.s3.ap-southeast-1.amazonaws.com/test-streams/nassau/speechenc/mp4/test_nassau_speech_enhance_input.mp4"
+      },
+      {
+        "name": "DASH AAC 256kbps",
+        "uri": "https://xperi-pa-html5p-aps.s3.ap-southeast-1.amazonaws.com/test-streams/nassau/speechenc/dash/aac/index.mpd"
+      }
+    ]
+  },
+  {
     "name": "Clear DASH",
     "samples": [
       {

@@ -1,0 +1,55 @@
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    namespace 'androidx.media3.nassau'
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        externalNativeBuild {
+            cmake {
+                arguments "-DANDROID_ABI=arm64-v8a"
+                cppFlags "-std=c++11 -fexceptions"
+            }
+        }
+
+        sourceSets.main {
+            //hide the jnifolder so that the automatic gradle build doesnt try to run
+            //its own ndk-build process
+            jni.srcDirs = []
+        }
+        // For Including 32 bit in 64 device.
+        ndk {
+            abiFilters "arm64-v8a"
+        }
+
+        packagingOptions {
+            exclude "lib/arm64/libnassau-lib.so"
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    externalNativeBuild {
+        cmake {
+            path "CMakeLists.txt"
+            version "3.10.2"
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
