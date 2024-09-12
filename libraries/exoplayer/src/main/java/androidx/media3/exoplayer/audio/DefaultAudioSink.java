@@ -1081,6 +1081,7 @@ public final class DefaultAudioSink implements AudioSink {
    *     or {@link C#TIME_END_OF_SOURCE} when draining remaining buffers at the end of the stream.
    */
   private void processBuffers(long avSyncPresentationTimeUs) throws WriteException {
+    android.util.Log.d(TAG, "processBuffers: avSyncPresentationTimeUs==" + avSyncPresentationTimeUs);
     // Drain existing buffer first.
     drainOutputBuffer(avSyncPresentationTimeUs);
     if (outputBuffer != null) {
@@ -1157,6 +1158,7 @@ public final class DefaultAudioSink implements AudioSink {
    */
   @SuppressWarnings("ReferenceEquality")
   private void drainOutputBuffer(long avSyncPresentationTimeUs) throws WriteException {
+    android.util.Log.d(TAG, "drainOutputBuffer: avSyncPresentationTimeUs==" + avSyncPresentationTimeUs);
     if (outputBuffer == null) {
       return;
     }

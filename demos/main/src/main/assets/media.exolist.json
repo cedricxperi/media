@@ -1,5 +1,78 @@
 [
   {
+    "name": "SVT Streams",
+    "samples": [
+      {
+        "name": "DASH: Digital Surround 5.1 768.0",
+        "uri": "https://secured.streamdts.com/dtsx/dtsc/dash/callout/index.mpd"
+      },
+      {
+        "name": "DASH: DTS Express 5.1 384.0",
+        "uri": "https://secured.streamdts.com/dtsx/dtse/dash/callout/index.mpd"
+      },
+      {
+        "name": "DASH: DTS:X (P2) 5.1 160.0",
+        "uri": "https://secured.streamdts.com/dtsx/dtsx/dash/callout51/index.mpd"
+      },
+      {
+        "name": "DASH: DTS:X (P2) (SYNC) 5.1 160.0",
+        "uri": "https://secured.streamdts.com/dtsx/dtsx/dash/sync/index.mpd"
+      },
+      {
+        "name": "DASH: DTS:X (P2) 5.1.4 448.0",
+        "uri": "https://secured.streamdts.com/dtsx/dtsx/dash/callout/index.mpd"
+      },
+      {
+        "name": "HLS-fMP4: Digital Surround 5.1 768.0",
+        "uri": "https://secured.streamdts.com/dtsx/dtsc/hls/fmp4/callout/index.m3u8"
+      },
+      {
+        "name": "HLS-fMP4: DTS Express 5.1 384.0",
+        "uri": "https://secured.streamdts.com/dtsx/dtse/hls/fmp4/callout/index.m3u8"
+      },
+      {
+        "name": "HLS-fMP4: DTS:X (P2) 5.1 160.0",
+        "uri": "https://secured.streamdts.com/dtsx/dtsx/hls/fmp4/callout51/index.m3u8"
+      },
+      {
+        "name": "HLS-fMP4: DTS:X (P2) (SYNC) 5.1 160.0",
+        "uri": "https://secured.streamdts.com/dtsx/dtsx/hls/fmp4/sync/index.m3u8"
+      },
+      {
+        "name": "HLS-fMP4: DTS:X (P2) 5.1.4 448.0",
+        "uri": "https://secured.streamdts.com/dtsx/dtsx/hls/fmp4/callout/index.m3u8"
+      },
+      {
+        "name": "HLS-v4: Digital Surround 5.1 768.0",
+        "uri": "https://secured.streamdts.com/dtsx/dtsc/hls/ts/callout/index.m3u8"
+      },
+      {
+        "name": "HLS-v4: DTS Express 5.1 384.0",
+        "uri": "https://secured.streamdts.com/dtsx/dtse/hls/ts/callout/index.m3u8"
+      },
+      {
+        "name": "HLS-v4: DTS:X (P2) 5.1 160.0",
+        "uri": "https://secured.streamdts.com/dtsx/dtsx/hls/ts/callout51/index.m3u8"
+      },
+      {
+        "name": "HLS-v4: DTS:X (P2) (SYNC) 5.1 160.0",
+        "uri": "https://secured.streamdts.com/dtsx/dtsx/hls/ts/sync/index.m3u8"
+      },
+      {
+        "name": "HLS-v4: DTS:X (P2) 5.1.4 448.0",
+        "uri": "https://secured.streamdts.com/dtsx/dtsx/hls/ts/callout/index.m3u8"
+      },
+      {
+        "name": "HLS-v3: Digital Surround 5.1 768.0",
+        "uri": "https://secured.streamdts.com/dtshd/dtsc/hls/index.m3u8"
+      },
+      {
+        "name": "HLS-v3: DTS Express 5.1 384.0",
+        "uri": "https://secured.streamdts.com/dtshd/dtse/hls/index.m3u8"
+      }
+    ]
+  },
+  {
     "name": "Clear DASH",
     "samples": [
       {
